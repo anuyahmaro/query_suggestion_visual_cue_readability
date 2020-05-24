@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <title>Image search widget</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="test search widget" />
+</head>
+
+<body>
+  <main>
+    <form>
+      <input id="searchBox" type="text" type="submit" name="searchBox" required/>
+      <button id="searchButton" type="submit">Get Image</button>
+    </form>
+    <div id="output"></div>
+  </main>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="./js/search.js"></script>
+</body>
+
+</html>

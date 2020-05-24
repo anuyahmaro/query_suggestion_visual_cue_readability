@@ -1,0 +1,25 @@
+<?php
+include "connection.php";
+$myFile = "rss.xml";
+$fh = fopen($myFile, 'w') or die("can't open file");
+
+$rss_txt .= '<?xml version="1.0" encoding="utf-8"?>';
+$rss_txt .= "<rss version='2.0'>";
+$rss_txt .= '<channel>';
+    $query = mysql_query("SELECT * FROM rssfeeds");
+    while($values_query = mysql_fetch_assoc($query))
+    {
+        $rss_txt .= '<item>';
+
+        $rss_txt .= '<title>' .$values_query['title']. '</title>';
+        $rss_txt .= '<link>' .$values_query['link']. '</link>';
+        $rss_txt .= '<description>' .$values_query['summary']. '</description>';
+
+        $rss_txt .= '</item>';
+    }
+$rss_txt .= '</channel>';
+$rss_txt .= '</rss>';
+
+fwrite($fh, $rss_txt);
+fclose($fh);
+?>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<research>
+
+	<grade >
+		<name>
+			kindergatten
+		</name>
+		<sessionid>
+			{qewrqerqreqrrewq}
+		</sessionid>
+		<datearrived>
+			21-10-2016 10:44:22
+		</datearrived>
+		
+		<queryterms>
+			<query >
+				<searchterm>
+					i am going to school
+				</searchterm>
+				<timestamp>
+					21-10-2016 10:54:22
+				</timestamp>
+				<clickedlinks>
+					<clickedlink>
+						<link>
+							http://maroisagoodgirl.com/tpopsisthebest/
+						</link>
+						<timestamp>
+							21-10-2016 10:56:22	
+						</timestamp>
+					</clickedlink>
+				</clickedlinks>
+			</query>
+			
+		</queryterms>
+	<grade>
+</research>

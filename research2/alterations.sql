@@ -1,0 +1,1 @@
+ALTER TABLE `sessionsearch` ADD `issuggestion` VARCHAR(50) NOT NULL DEFAULT 'false' AFTER `sessionid`;
